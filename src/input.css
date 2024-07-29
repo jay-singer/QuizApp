@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn {
+  @apply border text-blue-950 rounded-md text-left font-medium   transition-all duration-300 ease-in-out border-blue-950 w-full my-2 p-2.5;
+}
+.btn:hover:not([disabled]) {
+  @apply bg-blue-950 text-white;
+}
+.btn:disabled {
+  @apply cursor-not-allowed;
+}
+.correct {
+  @apply bg-green-400 text-white;
+}
+.incorrect {
+  @apply bg-red-400 text-white;
+}
